@@ -1,0 +1,13 @@
+csvfiles/data_all_cleaned.csv
+csvfiles/weights_history.csv
+csvfiles/weights_store.csv
+csvfiles/ws_state.json
+csvfiles/top_paths.csv
+
+__pycache__/
+
+build/
+dist/
+*.egg-info/
+
+.vscode/
