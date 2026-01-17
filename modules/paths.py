@@ -1,7 +1,6 @@
 from typing import List, Tuple, Dict
 import pandas as pd
 import numpy as np
-from config import DEFAULT_BASE_WEIGHT
 
 def normalize_path(path: List[str], dedupe_all: bool = False) -> Tuple[str, ...]:
     if dedupe_all:

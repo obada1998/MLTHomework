@@ -191,7 +191,7 @@ def run_cli(system: Dict[str, Any]):
     raw_df = _ensure_activity_date_datetime(raw_df)
 
     print("="*100)
-    print("Type 'exit' to quit.\n")
+    print("Type 'exit' to quit.")
     print("="*100)
 
     while True:
@@ -352,13 +352,6 @@ def run_cli(system: Dict[str, Any]):
         else:
             for st in loss_journey:
                 print(st)
-
-        print("\nFeature importances (outcome):")
-        for feat, imp in system.get("feature_importances_outcome", [])[:10]:
-            print(f" {feat}: {imp:.6f}")
-        print("\nFeature importances (next):")
-        for feat, imp in system.get("feature_importances_next", [])[:10]:
-            print(f" {feat}: {imp:.6f}")
         
         cont = input("\nContinue? (Y/n) [Default=Y]: ").strip().lower()
         if cont == "n":

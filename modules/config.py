@@ -23,9 +23,14 @@ ACTION_CANONICAL_MAPPING = {
     "CALL": "Call", "PHONE CALL": "Call",
     "MEETING": "Meeting", "MEET": "Meeting",
     "FOLLOW UP": "Follow Up", "FOLLOW-UP": "Follow Up", "FOLLOWUP": "Follow Up",
-    "REVIEW": "Review", "DEMO": "Demo", "SOCIAL": "Social", "OTHER": "Other",
-    "NONE": "NONE",
-
+    "ON-SITE": "On-Site", "ON-SITE": "On-Site", "ONSITE": "On-Site",
+    "1ST APPOINTMENT": "1St Appointment",
+    "2ND APPOINTMENT": "2Nd Appointment",
+    "INBOUND CALL": "Inbound Call",
+    "OUTBOUND CALL": "Outbound Call",
+    "DISCOVERY": "Discovery",
+    "REVIEW": "Review", 
+    "DEMO": "Demo", 
 }
 
 NO_OPP_KEYWORDS = {

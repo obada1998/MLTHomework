@@ -49,8 +49,6 @@ def prepare_ml_data(df: pd.DataFrame, test_size=TEST_SIZE, random_state=RANDOM_S
     if "days_since_prev_touch" not in df_rows.columns:
         df_rows["days_since_prev_touch"] = df_rows.groupby("journey_id")["activity_date"].diff().dt.total_seconds().div(86400).fillna(0).clip(lower=0)
 
-    df_rows[["Country","solution","last_action"]] = df_rows[["Country","solution","last_action"]].fillna({"Country":"UNKNOWN","solution":"UNKNOWN","last_action":"NONE"})
-
     journey_meta = df_rows.groupby("journey_id")["ever_won"].max().reset_index()
     journey_ids = journey_meta["journey_id"].values
     stratify_vals = journey_meta["ever_won"].astype(int).values if len(journey_meta) > 0 else None
